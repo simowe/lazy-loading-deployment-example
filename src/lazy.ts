@@ -1,3 +1,3 @@
 export function lazy() {
-  console.log('I am lazy')
+  console.log('I am very lazy')
 }
