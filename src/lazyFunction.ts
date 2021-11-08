@@ -1,6 +1,6 @@
 export function lazyFunction() {
   console.log(
-    'Change me to get a new hashed filename for lazyFunction. bjsdfbjfbdfsbndfbnsdfbnsdf'
+    'Change me to get a new hashed filename for lazyFunction. bjsdfbjfbdfsbndfbnfasdfdssdfasdfbnsdf'
   )
 
   const element = window.document.getElementById('lazy-target')
