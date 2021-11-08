@@ -1,6 +1,6 @@
 # Minimal lazy loading example
 
-This code shows hows lazy loading breaks when there is a deployment after the initial page load.
+This code is a simple NextJS project that shows hows lazy loading breaks when there is a deployment after the initial page load.
 
 The `webpack-[:hash].js` manifest file is download on page load and contains all lazy loaded files. When there is a deployment this manifest becomes stale, and points to files that no longer exists.
 
