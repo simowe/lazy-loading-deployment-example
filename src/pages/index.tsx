@@ -6,8 +6,9 @@ const Home: NextPage = () => {
     try {
       const res = await import('../lazy')
       res.lazy()
-    } catch (e) {
-      console.error('here it is fucked', e)
+    } catch (e: any) {
+      alert('Lazy loading failed: ' + e.message)
+      console.error(e)
     }
   }
 
