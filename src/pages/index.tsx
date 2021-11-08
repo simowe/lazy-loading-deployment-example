@@ -13,8 +13,8 @@ const Home: NextPage = () => {
   }
 
   return (
-    <Fragment>
-      <p>Steps</p>
+    <main style={{ fontSize: '25px', fontFamily: 'monospace' }}>
+      <strong>Steps</strong>
       <ol>
         <li>Open this site</li>
         <li>Change lazy.ts</li>
@@ -23,11 +23,12 @@ const Home: NextPage = () => {
         <li>Click button</li>
       </ol>
       <button onClick={onClick}>Click me</button>
-      <p>Why</p>
-      The filename for lazy.ts is included in the webpack-[:hash].js manifest
-      file. This file is loaded immediately at page load, but becomes stale with
-      a new deployment.
-    </Fragment>
+      <p>
+        The filename for lazy.ts is included in the webpack-[:hash].js manifest
+        file. This file is loaded immediately at page load, but becomes stale
+        with a new deployment.
+      </p>
+    </main>
   )
 }
 

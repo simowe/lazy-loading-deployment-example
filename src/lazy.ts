@@ -1,3 +1,3 @@
 export function lazy() {
-  console.log('I am very lazy')
+  alert('Lazy loading successful')
 }
