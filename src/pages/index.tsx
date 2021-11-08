@@ -7,7 +7,10 @@ const Page: NextPage = () => {
       <strong>Steps</strong>
       <ol>
         <li>Keep this page open</li>
-        <li>Change lazyFunction.ts or LazyComponent.tsx</li>
+        <li>
+          Change lazyFunction.ts or LazyComponent.tsx to get a new hashed
+          filename
+        </li>
         <li>Commit change and trigger Vercel redeploy</li>
         <li>Wait for deployment to finish</li>
         <li>Click on one of the examples</li>
