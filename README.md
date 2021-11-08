@@ -8,11 +8,12 @@ I am just looking for some thoughts on best practices, it's not a NextJS specifi
 
 
 ## Steps
-1. Keep the front page open
+1. Keep the front page open on a fresh reload. Don't visit any of the links when trying to reproduce the problem.
 2. Change lazyFunction.ts or LazyComponent.tsx to get a new hashed filename
 3. Commit change and trigger Vercel redeploy
 4. Wait for deployment to finish
 5. Click on one of the examples
+6. An alert will inform you how the lazy loading failed
 
 
 ## Potential solutions
