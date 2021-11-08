@@ -3,12 +3,16 @@ import { useEffect } from 'react'
 
 const Page: NextPage = () => {
   useEffect(() => {
-    import('../lazyFunction')
-      .then((res) => res.lazyFunction())
-      .catch((e) => {
+    ;(async () => {
+      try {
+        const res = await import('../lazyFunction')
+        res.lazyFunction()
+      } catch (e: any) {
         alert(e.message)
         console.error(e)
-      })
+        throw e
+      }
+    })()
   }, [])
 
   return <main id="lazy-target"></main>
